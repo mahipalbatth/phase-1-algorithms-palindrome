@@ -1,5 +1,14 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(mom) {
+  var len = mom.length;
+    var mid = Math.floor(len/2);
+
+    for ( var i = 0; i < mid; i++ ) {
+        if (mom[i] !== mom[len - 1 - i]) {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 /* 
